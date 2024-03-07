@@ -1,0 +1,331 @@
+html,
+body {
+    background-color: #ace7ff;
+    font-size: 62.5%;
+    line-height: 3rem;
+    margin: 0;
+    display: flex;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+}
+
+.main {
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    width: 100%;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 18px;
+    font-size: 2.8em;
+    font-size: 3.5vw;
+    color: rgba(0, 0, 0, 0.5);
+    top: 14%;
+}
+
+h2 {
+    bottom: 1vh;
+    font-size: 10px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+h1 span {
+    font-size: 10.6vw;
+    line-height: 1em;
+    z-index: 100;
+    text-shadow: 0.04em 0.04em 0 #fcfade;
+    display: block;
+}
+
+h1 span,
+h1 span:after {
+    font-weight: 600;
+    color: #e17171;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.16em;
+}
+
+h1 span:after {
+    color: rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    position: absolute;
+    left: 0.08em;
+    top: 0.08em;
+    z-index: -1;
+}
+
+span.one:after {
+    content: "Wishing pig";
+}
+
+span.two:after {
+    content: "a lot of";
+}
+
+span.three:after {
+    content: "happiness!!";
+}
+
+@media screen and (min-width: 880px) {
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    h1 span {
+        font-size: 6vw;
+    }
+}
+
+@-webkit-keyframes blink {
+
+    0%,
+    9%,
+    11%,
+    30%,
+    32%,
+    33%,
+    35%,
+    54%,
+    56%,
+    79%,
+    81%,
+    100% {
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+        clip-path: ellipse(50% 50% at 50% 50%);
+    }
+
+    10%,
+    31%,
+    34%,
+    55%,
+    80% {
+        -webkit-clip-path: ellipse(50% 5% at 50% 50%);
+        clip-path: ellipse(50% 5% at 50% 50%);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    9%,
+    11%,
+    30%,
+    32%,
+    33%,
+    35%,
+    54%,
+    56%,
+    79%,
+    81%,
+    100% {
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+        clip-path: ellipse(50% 50% at 50% 50%);
+    }
+
+    10%,
+    31%,
+    34%,
+    55%,
+    80% {
+        -webkit-clip-path: ellipse(50% 5% at 50% 50%);
+        clip-path: ellipse(50% 5% at 50% 50%);
+    }
+}
+
+@-webkit-keyframes hover {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes hover {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes shadow {
+
+    0%,
+    100% {
+        width: 170px;
+    }
+
+    50% {
+        width: 180px;
+    }
+}
+
+@keyframes shadow {
+
+    0%,
+    100% {
+        width: 170px;
+    }
+
+    50% {
+        width: 180px;
+    }
+}
+
+@-webkit-keyframes flight-left {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(25deg);
+    }
+}
+
+@keyframes flight-left {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(25deg);
+    }
+}
+
+@-webkit-keyframes flight-right {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(-25deg);
+    }
+}
+
+@keyframes flight-right {
+
+    0%,
+    100% {
+        width: 150px;
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        width: 125px;
+        transform: skewY(-25deg);
+    }
+}
+
+@-webkit-keyframes flight-little {
+
+    0%,
+    100% {
+        height: 110px;
+    }
+
+    50% {
+        height: 100px;
+    }
+}
+
+@keyframes flight-little {
+
+    0%,
+    100% {
+        height: 110px;
+    }
+
+    50% {
+        height: 100px;
+    }
+}
+
+@-webkit-keyframes wobble {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes wobble {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+#falling-hearts {
+    animation: wobble 60s ease-in infinite;
+    position: fixed;
+    inset: 0 0 0 0;
+    pointer-events: none;
+}
+
+.heart {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+    position: fixed;
+}
